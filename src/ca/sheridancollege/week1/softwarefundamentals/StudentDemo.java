@@ -12,10 +12,14 @@ package ca.sheridancollege.week1.softwarefundamentals;
 public class StudentDemo 
 {
 
+   
+
     
   private String studentID;
   private String name;
   private String program;
+  private boolean PartTime;
+  
   
   /**
    * A constructor to pass in the given ID and then name
@@ -28,6 +32,19 @@ public class StudentDemo
       name = givenName;
   }
   
+   /**
+     * @return the PartTime
+     */
+    public boolean isPartTime() {
+        return PartTime;
+    }
+
+    /**
+     * @param givenPartTime the PartTime to set
+     */
+    public void setPartTime(boolean givenPartTime) {
+        PartTime = givenPartTime;
+    }
   /**
    * A method to set the student ID
    * @param givenID the ID to set
