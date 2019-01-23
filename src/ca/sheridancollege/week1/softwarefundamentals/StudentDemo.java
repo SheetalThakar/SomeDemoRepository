@@ -12,13 +12,13 @@ package ca.sheridancollege.week1.softwarefundamentals;
 public class StudentDemo 
 {
 
-   
+    
 
     
   private String studentID;
   private String name;
   private String program;
-  private boolean PartTime;
+  private int MaxCourses;
   
   
   /**
@@ -91,4 +91,20 @@ public class StudentDemo
     public void setProgram(String givenProgram) {
         program = givenProgram;
     }
+    
+    /**
+     * @return the MaxCourses
+     */
+    public int getMaxCourses() {
+        return MaxCourses;
+    }
+
+    /**
+     * @param givenMaxCourses the MaxCourses to set
+     */
+    public void setMaxCourses(int givenMaxCourses) {
+        MaxCourses = givenMaxCourses;
+    }
+
+   
 }
